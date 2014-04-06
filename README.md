@@ -23,7 +23,7 @@ Source - [git project](https://github.com/krzysztofzablocki/IconOverlaying)
 
 ### Build number automatic update
 ***bundleVersioning.sh***  
-Use a git commits to set a Build Number. This is the safest way to set build number.
+Use a git commits to set a Build Number. This is the safest way to set build number.  
 Automaticaly update Bundle Number with a count of git commits.  
 
 Autor - [Konstantin Koval](https://github.com/konstantinkoval)  
@@ -39,3 +39,16 @@ Automaticaly update Version Number with latest tag. When you make a new release 
 [Semantic versioning](http://semver.org)  
 
 Autor - [Konstantin Koval](https://github.com/konstantinkoval)  
+
+
+### TODO: to Warning
+***TODOToWarnings.sh***  
+Convert `TODO:` and `FIXME:` to warrnings.  
+Convert all TODOs into warrning. This way you won't forget about anything you need to fix.  
+
+***Recomend***  
+Xcode pluging to work with TODOs [XToDo for Xcode](https://github.com/trawor/XToDo)  
+Best way to install with [Alcatraz](http://alcatraz.io)  
+```curl -fsSL https://raw.github.com/supermarin/Alcatraz/master/Scripts/install.sh | sh ```  
+Open Xcode - Window -> Package Manager -> Search for xtodo and install.
+
