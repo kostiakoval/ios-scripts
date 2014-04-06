@@ -2,12 +2,13 @@ ios-scripts
 ===========
 Useful collection of scripts for iOS
 
-How to use
+How to setup
 ===========
 1. Open Xcode project. Select your target  
 2. Editor -> Add Build Phase -> Add Run Script Build Phase  
 3. Open "Run Script" section that was created and add you script there.  
    Example: "${SRCROOT}/Scripts/versionFromTag.sh"  
+
 ![Screenshot](/readme/script-full-screen.jpg "Step 1-2")  
 ![Screenshot](/readme/script-files-setup.jpg "Step 3")  
 
