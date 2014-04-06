@@ -1,13 +1,10 @@
 #Update version number with last git tag
-tags_count = `git tag | wc -l | tr -d ' '`
+tags_count=`git tag | wc -l | tr -d ' '`
 
-if [[ $tags_count = 0 ]]; then
-	echo "warning: There is no tags in git! Please create a tag"
+if [[ "$tags_count" = "0" ]]; then
+	echo -e "warning: There is no tag in git! Please create a tag.\n Run this commands to create a tag - \n git tag  1.0.0 \n git push --tags"
 else
 	tag_version_string=$(git describe --abbrev=0)
-	echo $tag_version_string
-	#if [ ${CONFIGURATION} == "Release" ]; then
-	#	echo "Release Mode"
-	#fi
+	echo "Version: $tag_version_string"
 	/usr/libexec/PlistBuddy -c "Set :CFBundleShortVersionString $tag_version_string" "${PROJECT_DIR}/${INFOPLIST_FILE}"
 fi
